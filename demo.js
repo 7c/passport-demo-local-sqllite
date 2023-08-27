@@ -14,6 +14,7 @@ const middleware_logging = require('./middleware_logging')
 // session storage sqllite3
 // const connect = require('connect'),SQLiteStore = require('connect-sqlite3')(connect);
 const SQLiteStore = require('connect-sqlite3');
+const Store = new SQLiteStore(session)
 
 // connect.createServer(
 //     connect.cookieParser(),
@@ -35,11 +36,10 @@ app.use(session({
         expires: false, // no expiration
     },
     name: 'myapp', // good to change this
-    store: new SQLiteStore(session)({ // if you do not define a store, sessions will be stored in memory
+    store: new Store({
         dir:"./",
-        db: "sessions.db",
+        db: "sessions.sqllite",
         table: "sessions",
-        concurrentDB: true,
     }),
 }));
 app.use(passport.initialize())
