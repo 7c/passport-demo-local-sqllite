@@ -12,3 +12,9 @@ https://www.npmjs.com/package/express-session#compatible-session-stores
 ## Session Store SqlLite3
 https://www.npmjs.com/package/connect-sqlite3
 
+## Get started
+```
+npm i
+node demo.js
+```
+it will then listen on port 4000 of 127.0.0.1
