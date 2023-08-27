@@ -25,6 +25,8 @@ invalidate all sessions of the user, so user logs out of all devices
 ### change email
 invalidate all sessions of the user, so user logs out of all devices
 
+## Packages required
+`npm i --save passport passport-local express-session express connect-sqlite3`
 
 # Trying it out
 ```
