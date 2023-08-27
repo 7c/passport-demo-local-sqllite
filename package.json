@@ -1,0 +1,21 @@
+{
+  "name": "passport-demo-local",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4",
+    "connect-sqlite3": "^0.9.13",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mybase": "^1.0.42",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0"
+  }
+}
