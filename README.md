@@ -12,7 +12,21 @@ https://www.npmjs.com/package/express-session#compatible-session-stores
 ## Session Store SqlLite3
 https://www.npmjs.com/package/connect-sqlite3
 
-## Get started
+## Strategies
+### forgot password
+send user the password if email exists, no need to invalidate the session, because someone external might have initiated this action
+
+### change password
+invalidate all sessions of the user, so user logs out of all devices
+
+### delete account
+invalidate all sessions of the user, so user logs out of all devices
+
+### change email
+invalidate all sessions of the user, so user logs out of all devices
+
+
+# Trying it out
 ```
 npm i
 node demo.js
