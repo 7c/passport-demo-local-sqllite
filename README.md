@@ -12,6 +12,10 @@ https://www.npmjs.com/package/express-session#compatible-session-stores
 ## Session Store SqlLite3
 https://www.npmjs.com/package/connect-sqlite3
 
+## Good getting started guide in youtube with explanations
+https://www.youtube.com/playlist?list=PLUUOvUPrFYcjel-IKiAQY4coJJ9EUjfcP
+
+
 ## Strategies
 ### forgot password
 send user the password if email exists, no need to invalidate the session, because someone external might have initiated this action

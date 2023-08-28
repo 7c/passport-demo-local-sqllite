@@ -58,8 +58,6 @@ passport.use("local", new LocalStrategy(
     }
 ))
 
-
-
 passport.serializeUser((user, done) => {
     console.log(chalk.yellow(`serialiseUser ${JSON.stringify(user)}`))
     done(null, user.id);
