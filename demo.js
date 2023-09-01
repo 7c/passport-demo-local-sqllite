@@ -82,6 +82,7 @@ app.use(middleware_logging)
 
 app.get('/ping', (req, res) => { res.send('pong') })
 app.get('/logout', (req, res) => {
+    // It does so by removing the req.user object and the Passport section from the session. However, it does not explicitly delete the session cookie. This behavior is intentional, as sessions might contain other data beyond authentication status.
     req.logout(function (err) {
         if (err) { return next(err); }
         res.redirect('/home');
